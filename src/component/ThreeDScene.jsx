@@ -1,14 +1,14 @@
 import React, { useEffect, useRef } from 'react';
-import * as THREE from 'https://cdn.skypack.dev/three@0.129.0/build/three.module.js';
-import { OrbitControls } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js';
-import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
+import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
-const ThreeDScene = ({ modelName, key }) => {
+const ThreeDScene = ({ modelName, key2,renderer }) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
     // Create a unique renderer for this instance
-    const renderer = new THREE.WebGLRenderer({ alpha: true });
+
     renderer.setSize(window.innerWidth, window.innerHeight);
     const container = containerRef.current;
     container?.appendChild(renderer.domElement);
@@ -85,7 +85,7 @@ const ThreeDScene = ({ modelName, key }) => {
     };
   }, [modelName]);
 
-  return <div key={key} ref={containerRef} className={'container3D'}></div>;
+  return <div key={key2} ref={containerRef} className={'container3D'}></div>;
 };
 
 export default ThreeDScene;
