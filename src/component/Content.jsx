@@ -1,64 +1,28 @@
-import React, { useEffect, useState } from 'react';
-import { Card, Row, Col, Modal, Button } from 'antd';
+import React from 'react';
+import { Card, Row, Col } from 'antd';
 import { foodsAndDescs } from '../constants/foodsAndDesc';
 import ThreeDScene from '../component/ThreeDScene';
 
-const renderDetail = (item, i, modelName) => {
+const renderDetail = (item, i) => {
   return (
     <Card key={i} id={item.label && `#${item.label}`} className='container-card' title={item.title}>
-      {item.desc}
+      <Row style={{ flexDirection: item.isReverse && 'row-reverse' }} gutter={[24, 24]}>
+        <Col span={14}>{item.desc}</Col>
+        <Col span={9} style={{ background: '#9ad284' }}>
+          <ThreeDScene modelName={item.modelName} key={i} />
+        </Col>
+      </Row>
     </Card>
   );
 };
 
 export const CustomContent = () => {
-  const [modelName, setModelName] = useState('dino');
-  const [isOpen, setIsOpen] = useState(false);
-  useEffect(() => {
-    console.log(isOpen);
-  }, []);
   return (
     <>
-      <Modal
-        title={'foodName'}
-        okButtonProps={{ style: { display: 'none' } }}
-        onCancel={() => {
-          setIsOpen(false);
-        }}
-        cancelText={'OK'}
-        onClose={() => {
-          setIsOpen(false);
-        }}
-        destroyOnClose={true}
-        closable={true}
-        open={isOpen}
-      >
-        <ThreeDScene key={'keeeeeeeyyy'} modelName={modelName} />
-      </Modal>
       <Col className='full-width'>
-        <Row>
-          <Col>
-            <Button
-              onClick={() => {
-                setModelName('eye');
-                setIsOpen(true);
-              }}
-            >
-              render Eye
-            </Button>
-          </Col>
-          <Col>
-            <Button
-              onClick={() => {
-                setModelName('dino');
-                setIsOpen(true);
-              }}
-            >
-              render dino
-            </Button>
-          </Col>
-        </Row>
-        <Row> {renderDetail(foodsAndDescs[0], 'keeye123', modelName)}</Row>
+        {foodsAndDescs.map((item, i) => {
+          return renderDetail(item, i);
+        })}
       </Col>
     </>
   );

@@ -3,7 +3,7 @@ body {
   font-weight: 600;
 }
 
-#container3D canvas {
+.container3D canvas {
   width: 35vw !important;
   height: 35vh !important;
   position: relative;
