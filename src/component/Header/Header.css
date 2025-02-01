@@ -1,0 +1,35 @@
+.header {
+  width: 100%;
+  background-color: #cad2c5;
+  text-align: center;
+  z-index: 1000;
+}
+
+.header-title {
+  font-family: 'Dancing Script', cursive !important;
+  color: black;
+  font-family: 'Cursive', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.footer {
+}
+
+.footer-text {
+  font-family: cursive;
+  color: #9a3d3d;
+  margin-right: 10px;
+}
+
+.wp-icon {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  #footerText {
+    display: none;
+  }
+}

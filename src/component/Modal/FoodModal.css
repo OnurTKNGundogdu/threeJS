@@ -1,0 +1,9 @@
+.food-modal .ant-modal-content {
+  background-color: black;
+  color: white;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+}

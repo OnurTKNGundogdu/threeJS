@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: 'Lora', serif; 
+  background-color: #CAD2C5; 
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.ant-modal-content {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

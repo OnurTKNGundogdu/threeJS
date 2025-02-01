@@ -1,0 +1,48 @@
+.food-card {
+  width: 500px;
+  min-height: 350px;
+  background-color: #4a4a4a;
+  color: #f4ede4;
+  font-family: 'Cursive', sans-serif;
+  position: relative;
+}
+
+.food-card-title {
+  color: #f4ede4;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.food-card-image {
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.food-card-description {
+  color: #f4ede4;
+}
+
+.food-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.food-card-price {
+  color: #f4ede4;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.food-card-icon {
+  font-size: 20px;
+  color: #f2cc8f;
+  cursor: pointer;
+}
+
+.ant-card {
+  border-color: #d9c7b6;
+}
