@@ -15,7 +15,7 @@
 }
 
 .food-card-image {
-  height: 150px;
+  height: 250px;
   object-fit: cover;
   cursor: pointer;
 }
@@ -45,4 +45,8 @@
 
 .ant-card {
   border-color: #d9c7b6;
+}
+
+.ant-card .ant-card-body{
+  padding: 0px 12px 12px 12px;
 }
