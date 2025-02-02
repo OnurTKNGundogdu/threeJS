@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Header as CustomHeader } from '../Header/Header';
 import TabsMenu from '../Tabs/Tabs';
 import FoodCard from '../Card/FoodCard';
@@ -13,6 +13,7 @@ const { Header, Content } = Layout;
 const MainContent = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [modalImage, setModalImage] = useState('');
+  const contentRef = useRef(null); // Add a ref for the Content section
 
   const handle3DIconClick = (modalImage) => {
     setModalImage(modalImage);
@@ -27,9 +28,9 @@ const MainContent = () => {
     <Layout className='main-content'>
       <Header>
         <CustomHeader />
-        <TabsMenu tabTitles={tabTitles} />
+        <TabsMenu tabTitles={tabTitles} contentRef={contentRef} /> {/* Pass the ref to TabsMenu */}
       </Header>
-      <Content className='content'>
+      <Content className='content' ref={contentRef}>
         <>
           {tabTitles.map((title) => (
             <div id={title.toLowerCase()} key={title} className='section'>

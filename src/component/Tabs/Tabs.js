@@ -4,26 +4,28 @@ import './Tabs.css';
 
 const { TabPane } = Tabs;
 
-const TabsMenu = ({ tabTitles, onTabClick }) => {
-  const [activeKey, setActiveKey] = useState(); // Initialize with the first tab
+const TabsMenu = ({ tabTitles, contentRef }) => {
+  const [activeKey, setActiveKey] = useState();
 
   const handleTabClick = (key) => {
     const section = document.getElementById(key);
-    if (section) {
+    if (section && contentRef.current) {
       const yOffset = -120;
-      const yPosition = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: yPosition, behavior: 'smooth' });
+      const yPosition = section.offsetTop + yOffset; // Use offsetTop relative to the content container
+      contentRef.current.scrollTo({ top: yPosition, behavior: 'smooth' }); // Scroll within the content container
     }
     setActiveKey(key);
   };
 
   useEffect(() => {
     setActiveKey(tabTitles[0].toLowerCase());
-    handleTabClick(tabTitles[0].toLowerCase()); // Call the onTabClick function
-  }, []);
-  
+    handleTabClick(tabTitles[0].toLowerCase());
+  }, [tabTitles]);
+
   useEffect(() => {
     const handleScroll = () => {
+      if (!contentRef.current) return;
+
       let closestSection = activeKey;
       let minDistance = Infinity;
 
@@ -31,7 +33,7 @@ const TabsMenu = ({ tabTitles, onTabClick }) => {
         const section = document.getElementById(title.toLowerCase());
         if (section) {
           const rect = section.getBoundingClientRect();
-          const distance = Math.abs(rect.top - 150);
+          const distance = Math.abs(rect.top - contentRef.current.getBoundingClientRect().top - 150);
 
           if (distance < minDistance && rect.top < window.innerHeight / 2) {
             minDistance = distance;
@@ -43,12 +45,17 @@ const TabsMenu = ({ tabTitles, onTabClick }) => {
       setActiveKey(closestSection);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    const contentElement = contentRef.current;
+    if (contentElement) {
+      contentElement.addEventListener('scroll', handleScroll);
+    }
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      if (contentElement) {
+        contentElement.removeEventListener('scroll', handleScroll);
+      }
     };
-  }, [tabTitles, activeKey]);
+  }, [tabTitles, activeKey, contentRef]);
 
   return (
     <Tabs activeKey={activeKey} centered onTabClick={handleTabClick} onChange={handleTabClick} className='tabs-menu'>
