@@ -10,6 +10,12 @@
   box-sizing: border-box;
 }
 
+.ant-layout-content {
+  height: calc(-133px + 100vh);
+  width: 100%;
+  overflow: auto;
+}
+
 .section {
   margin-bottom: 40px;
 }
