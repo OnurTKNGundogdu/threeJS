@@ -1,24 +1,35 @@
 .header {
   width: 100%;
   background-color: #cad2c5;
-  text-align: center;
   z-index: 1000;
+  padding: 5px 10px;
+}
+
+.header-content {
+  padding-left: 218px;
+  display: flex;
+  justify-content: space-between; /* Space between title and contact info */
+  align-items: center; /* Center vertically */
+  width: 100%;
 }
 
 .header-title {
-  font-family: 'Dancing Script', cursive !important;
   color: black;
-  font-family: 'Cursive', sans-serif;
   font-size: 20px;
   text-transform: uppercase;
   margin: 0;
+  font-family: 'Poppins', sans-serif !important;
+  text-align: center; /* Center the title */
+  flex: 1; /* Allow the title to take available space */
 }
 
-.footer {
+.contact-info {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: flex-end; /* Align to the right */
 }
 
 .footer-text {
-  font-family: cursive;
   color: #9a3d3d;
   margin-right: 10px;
 }
@@ -28,7 +39,17 @@
   align-items: center;
 }
 
+.ant-layout-header {
+  padding: 0px;
+  background: none;
+  width: 100% !important;
+  height: auto;
+}
+
 @media (max-width: 600px) {
+  .header-content {
+    padding-left: 40px;
+  }
   #footerText {
     display: none;
   }

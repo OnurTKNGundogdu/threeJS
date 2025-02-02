@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import Header from '../Header/Header';
+import { Header as CustomHeader } from '../Header/Header';
 import TabsMenu from '../Tabs/Tabs';
 import FoodCard from '../Card/FoodCard';
 import FoodModal from '../Modal/FoodModal';
 import testData from '../../data/testData';
+import { Layout } from 'antd';
 import './MainContent.css';
 
 const tabTitles = ['Main', 'Meal Deal', 'Vegetarian', 'Sides', 'Desserts', 'Drinks', 'Sauces'];
+const { Header, Content } = Layout;
 
 const MainContent = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -22,27 +24,29 @@ const MainContent = () => {
   };
 
   return (
-    <div className='main-content'>
-      <div className='header-container'>
-        <Header />
+    <Layout className='main-content'>
+      <Header>
+        <CustomHeader />
         <TabsMenu tabTitles={tabTitles} />
-      </div>
-      <div className='content'>
-        {tabTitles.map((title) => (
-          <div id={title.toLowerCase()} key={title} className='section'>
-            <h2 className='section-title'>{title}</h2>
-            <div className='card-container'>
-              {testData
-                .filter((data) => data.dishType === title.toLowerCase())
-                .map((item, i) => (
-                  <FoodCard key={i} item={item} on3DClick={() => handle3DIconClick(item.modalImage)} />
-                ))}
+      </Header>
+      <Content className='content'>
+        <>
+          {tabTitles.map((title) => (
+            <div id={title.toLowerCase()} key={title} className='section'>
+              <h2 className='section-title'>{title}</h2>
+              <div className='card-container'>
+                {testData
+                  .filter((data) => data.dishType === title.toLowerCase())
+                  .map((item, i) => (
+                    <FoodCard key={i} item={item} on3DClick={() => handle3DIconClick(item.modalImage)} />
+                  ))}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </>
+      </Content>
       <FoodModal isVisible={isModalVisible} image={modalImage} onClose={handleModalClose} />
-    </div>
+    </Layout>
   );
 };
 

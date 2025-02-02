@@ -21,15 +21,37 @@ const TabsMenu = ({ tabTitles, onTabClick }) => {
     setActiveKey(tabTitles[0].toLowerCase());
     handleTabClick(tabTitles[0].toLowerCase()); // Call the onTabClick function
   }, []);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      let closestSection = activeKey;
+      let minDistance = Infinity;
+
+      tabTitles.forEach((title) => {
+        const section = document.getElementById(title.toLowerCase());
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          const distance = Math.abs(rect.top - 150);
+
+          if (distance < minDistance && rect.top < window.innerHeight / 2) {
+            minDistance = distance;
+            closestSection = title.toLowerCase();
+          }
+        }
+      });
+
+      setActiveKey(closestSection);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [tabTitles, activeKey]);
 
   return (
-    <Tabs
-      activeKey={activeKey}
-      centered
-      onTabClick={handleTabClick}
-      onChange={handleTabClick}
-      className='tabs-menu'
-    >
+    <Tabs activeKey={activeKey} centered onTabClick={handleTabClick} onChange={handleTabClick} className='tabs-menu'>
       {tabTitles.map((title) => (
         <TabPane tab={title} key={title.toLowerCase()} />
       ))}
