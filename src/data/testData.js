@@ -1,3 +1,5 @@
+const x = `./models/cheese/scene.gltf`;
+
 const testData = [
   {
     dishType: 'main',
@@ -6,7 +8,8 @@ const testData = [
       'Gyro is meat cooked on a vertical rotisserie and served with greek flatbread, salads, few chips and tzatziki yogurt garlic sauce',
     price: '£10.00',
     image: `/images/${1}.png`,
-    modalImage: `/images/${1}.png`,
+    // modalImage: `/images/${1}.png`,
+    modalImage: x,
   },
   {
     dishType: 'main',
@@ -14,7 +17,8 @@ const testData = [
     description: '',
     price: '£12.00',
     image: `/images/${1}.png`,
-    modalImage: `/images/${1}.png`,
+    // modalImage: `/images/${1}.png`,
+    modalImage: x,
   },
   {
     dishType: 'main',
@@ -22,7 +26,8 @@ const testData = [
     description: 'Chicken Gyro with Lamb Sausage and Halloumi Cheese',
     price: '£15.00',
     image: `/images/${2}.png`,
-    modalImage: `/images/${2}.png`,
+    // modalImage: `/images/${2}.png`,
+    modalImage: x,
   },
   {
     dishType: 'main',
@@ -30,7 +35,8 @@ const testData = [
     description: 'Grilled this ground meat, with added spices',
     price: '£10.00',
     image: `/images/${3}.png`,
-    modalImage: `/images/${3}.png`,
+    // modalImage: `/images/${3}.png`,
+    modalImage: x,
   },
   {
     dishType: 'main',
@@ -38,7 +44,8 @@ const testData = [
     description: 'Choice between Chicken Gyro or Sausage',
     price: '£10.00',
     image: `/images/${4}.png`,
-    modalImage: `/images/${4}.png`,
+    // modalImage: `/images/${4}.png`,
+    modalImage: x,
   },
   {
     dishType: 'main',
@@ -46,7 +53,8 @@ const testData = [
     description: '',
     price: '£6.00',
     image: `/images/${5}.png`,
-    modalImage: `/images/${5}.png`,
+    // modalImage: `/images/${5}.png`,
+    modalImage: x,
   },
   {
     dishType: 'main',
@@ -54,7 +62,8 @@ const testData = [
     description: 'Served with cheese, lettuce, tomatoes, onions and a selection of sauces',
     price: '£8.00',
     image: `/images/${6}.png`,
-    modalImage: `/images/${6}.png`,
+    // modalImage: `/images/${6}.png`,
+    modalImage: x,
   },
   {
     dishType: 'main',
@@ -62,15 +71,54 @@ const testData = [
     description: '',
     price: '£10.00',
     image: `/images/${7}.png`,
-    modalImage: `/images/${7}.png`,
+    // modalImage: `/images/${7}.png`,
+    modalImage: x,
+  },
+  
+  {
+    dishType: 'meal deal',
+    name: 'GYRO MEAL DEAL #1',
+    description: 'Chicken Gyro, Chips & Soft Drink, Baklava',
+    price: '£15.00',
+    image: `/images/${8}.png`,
+    // modalImage: `/images/${8}.png`,
+    modalImage: x,
   },
   {
     dishType: 'meal deal',
-    name: 'BURGER MEAL DEAL',
+    name: 'GYRO MEAL DEAL #2',
+    description: 'Mixed Gyro, Chips & Soft Drink, Baklava',
+    price: '£19.50',
+    image: `/images/${8}.png`,
+    // modalImage: `/images/${8}.png`,
+    modalImage: x,
+  },
+  {
+    dishType: 'meal deal',
+    name: 'BURGER MEAL DEAL #1',
+    description: 'Bacon Burger, chips & soft drink, baklava',
+    price: '£15.00',
+    image: `/images/${8}.png`,
+    // modalImage: `/images/${8}.png`,
+    modalImage: x,
+  },
+  {
+    dishType: 'meal deal',
+    name: 'BURGER MEAL DEAL #2',
+    description: 'Chicken Burger, chips & soft drink, baklava',
+    price: '£15.00',
+    image: `/images/${8}.png`,
+    // modalImage: `/images/${8}.png`,
+    modalImage: x,
+  },
+  {
+    dishType: 'meal deal',
+    name: 'BURGER MEAL DEAL #3',
     description: 'Single Burger, chips & soft drink',
     price: '£10.00',
     image: `/images/${8}.png`,
-    modalImage: `/images/${8}.png`,
+    // modalImage: `/images/${8}.png`,
+    modalImage: x,
   },
 
   {
@@ -79,7 +127,8 @@ const testData = [
     description: 'Comes with Greek Flatbread, salad, chips, hummus and tzatziki or chilli sauces',
     price: '£10.00',
     image: `/images/${9}.png`,
-    modalImage: `/images/${9}.png`,
+    // modalImage: `/images/${9}.png`,
+    modalImage: x,
   },
   {
     dishType: 'vegetarian',
@@ -87,7 +136,8 @@ const testData = [
     description: 'Comes with a side of lettuces and Hummus',
     price: '£6.00',
     image: `/images/${9}.png`,
-    modalImage: `/images/${9}.png`,
+    // modalImage: `/images/${9}.png`,
+    modalImage: x,
   },
   {
     dishType: 'vegetarian',
@@ -95,7 +145,8 @@ const testData = [
     description: 'Comes with Greek Flatbread, salad, chips, Hummus and tzatziki sauces',
     price: '£10.00',
     image: `/images/${10}.png`,
-    modalImage: `/images/${10}.png`,
+    // modalImage: `/images/${10}.png`,
+    modalImage: x,
   },
   {
     dishType: 'vegetarian',
@@ -103,7 +154,8 @@ const testData = [
     description: 'Comes with salad, chips, Hummus and tzatziki sauces',
     price: '£7.00',
     image: `/images/${10}.png`,
-    modalImage: `/images/${10}.png`,
+    // modalImage: `/images/${10}.png`,
+    modalImage: x,
   },
   {
     dishType: 'vegetarian',
@@ -111,7 +163,8 @@ const testData = [
     description: 'Served with Greek Pita bread, grilled vegatables, salad, chips,tzatziki sauce and Hummus',
     price: '£13.00',
     image: `/images/${11}.png`,
-    modalImage: `/images/${11}.png`,
+    // modalImage: `/images/${11}.png`,
+    modalImage: x,
   },
 
   {
@@ -120,7 +173,8 @@ const testData = [
     description: '',
     price: '£5.00',
     image: `/images/${12}.png`,
-    modalImage: `/images/${12}.png`,
+    // modalImage: `/images/${12}.png`,
+    modalImage: x,
   },
   {
     dishType: 'sides',
@@ -128,7 +182,8 @@ const testData = [
     description: '',
     price: '£6.00',
     image: `/images/${13}.png`,
-    modalImage: `/images/${13}.png`,
+    // modalImage: `/images/${13}.png`,
+    modalImage: x,
   },
   {
     dishType: 'sides',
@@ -136,7 +191,8 @@ const testData = [
     description: '',
     price: '£8.50',
     image: `/images/${14}.png`,
-    modalImage: `/images/${14}.png`,
+    // modalImage: `/images/${14}.png`,
+    modalImage: x,
   },
   {
     dishType: 'sides',
@@ -144,7 +200,8 @@ const testData = [
     description: '',
     price: '£6.00',
     image: `/images/${15}.png`,
-    modalImage: `/images/${15}.png`,
+    // modalImage: `/images/${15}.png`,
+    modalImage: x,
   },
   {
     dishType: 'sides',
@@ -152,7 +209,8 @@ const testData = [
     description: '',
     price: '£5.00',
     image: `/images/${16}.png`,
-    modalImage: `/images/${16}.png`,
+    // modalImage: `/images/${16}.png`,
+    modalImage: x,
   },
   {
     dishType: 'sides',
@@ -160,7 +218,8 @@ const testData = [
     description: '',
     price: '£6.00',
     image: `/images/${17}.png`,
-    modalImage: `/images/${17}.png`,
+    // modalImage: `/images/${17}.png`,
+    modalImage: x,
   },
   {
     dishType: 'sides',
@@ -168,7 +227,8 @@ const testData = [
     description: 'Comes with Greek Flatbread',
     price: '£6.00',
     image: `/images/${18}.png`,
-    modalImage: `/images/${18}.png`,
+    // modalImage: `/images/${18}.png`,
+    modalImage: x,
   },
 
   {
@@ -177,7 +237,8 @@ const testData = [
     description: '',
     price: '£5.00',
     image: `/images/${19}.png`,
-    modalImage: `/images/${19}.png`,
+    // modalImage: `/images/${19}.png`,
+    modalImage: x,
   },
 
   {
@@ -186,7 +247,8 @@ const testData = [
     description: 'A pot of extra tzatziki ',
     price: '£1.00',
     image: `/images/${20}.png`,
-    modalImage: `/images/${20}.png`,
+    // modalImage: `/images/${20}.png`,
+    modalImage: x,
   },
   {
     dishType: 'sauces',
@@ -194,7 +256,8 @@ const testData = [
     description: 'A pot of extra chili sauces',
     price: '£1.00',
     image: `/images/${21}.png`,
-    modalImage: `/images/${21}.png`,
+    // modalImage: `/images/${21}.png`,
+    modalImage: x,
   },
 
   {
@@ -203,7 +266,8 @@ const testData = [
     description: '',
     price: '£1.50',
     image: `/images/${25}.png`,
-    modalImage: `/images/${25}.png`,
+    // modalImage: `/images/${25}.png`,
+    modalImage: x,
   },
   {
     dishType: 'drinks',
@@ -211,7 +275,8 @@ const testData = [
     description: '',
     price: '£1.50',
     image: `/images/${22}.png`,
-    modalImage: `/images/${22}.png`,
+    // modalImage: `/images/${22}.png`,
+    modalImage: x,
   },
   {
     dishType: 'drinks',
@@ -219,7 +284,8 @@ const testData = [
     description: '',
     price: '£2.00',
     image: `/images/${23}.png`,
-    modalImage: `/images/${23}.png`,
+    // modalImage: `/images/${23}.png`,
+    modalImage: x,
   },
   {
     dishType: 'drinks',
@@ -227,7 +293,8 @@ const testData = [
     description: '',
     price: '£2.50',
     image: `/images/${24}.png`,
-    modalImage: `/images/${24}.png`,
+    // modalImage: `/images/${24}.png`,
+    modalImage: x,
   },
 ];
 
