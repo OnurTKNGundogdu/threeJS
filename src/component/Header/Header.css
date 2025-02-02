@@ -6,19 +6,15 @@
 }
 
 .header-title {
-  font-family: 'Dancing Script', cursive !important;
   color: black;
-  font-family: 'Cursive', sans-serif;
   font-size: 20px;
   text-transform: uppercase;
   margin: 0;
-}
+  font-family: 'Poppins', sans-serif !important;
 
-.footer {
 }
 
 .footer-text {
-  font-family: cursive;
   color: #9a3d3d;
   margin-right: 10px;
 }
@@ -26,6 +22,12 @@
 .wp-icon {
   display: flex;
   align-items: center;
+}
+.ant-layout-header {
+  padding: 0px;
+  background: none;
+  width: 100% !important;
+  height: auto;
 }
 
 @media (max-width: 600px) {

@@ -8,10 +8,19 @@
 }
 
 .tabs-menu {
-  font-family: 'Dancing Script', cursive !important;
-  margin: 0% 5%;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-bottom: 2px solid #a52a2a; /* Bordo veya koyu bir ton */
+  margin-bottom: 10px;
+  padding: 0px 10px;
   z-index: 999;
   background-color: #cad2c5;
+  width: 100%;
+}
+
+.ant-tabs-nav-operations {
+  display: none !important;
 }
 
 .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
