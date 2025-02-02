@@ -8,7 +8,7 @@ const FoodModal = ({ isVisible, image, onClose }) => {
   return (
     <Modal visible={isVisible} footer={null} onCancel={onClose} centered className='food-modal'>
       <model-viewer
-        src={'./models/cheese/scene.gltf'}
+        src={image}
         alt='A 3D model'
         auto-rotate
         camera-controls

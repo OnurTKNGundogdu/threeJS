@@ -1,4 +1,4 @@
-const x = `./models/cheese/scene.gltf`;
+const x = `./models/dino/scene.gltf`;
 
 const testData = [
   {
