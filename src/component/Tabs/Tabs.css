@@ -3,10 +3,6 @@
   font-weight: bold;
 }
 
-.tabs-menu .ant-tabs-tab-active {
-  color: white !important;
-}
-
 .tabs-menu {
   font-weight: bold;
   text-transform: uppercase;

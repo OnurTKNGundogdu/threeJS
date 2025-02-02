@@ -57,6 +57,13 @@ const TabsMenu = ({ tabTitles, contentRef }) => {
     };
   }, [tabTitles, activeKey, contentRef]);
 
+  useEffect(() => {
+    // Ant Tabs tıklandığında focus'u kaldır
+    document.querySelectorAll(".ant-tabs-tab-btn").forEach((tab) => {
+      tab.addEventListener("mousedown", (e) => e.preventDefault());
+    });
+  }, []);
+
   return (
     <Tabs activeKey={activeKey} centered onTabClick={handleTabClick} onChange={handleTabClick} className='tabs-menu'>
       {tabTitles.map((title) => (
