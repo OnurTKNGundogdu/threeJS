@@ -1,8 +1,16 @@
 .header {
   width: 100%;
   background-color: #cad2c5;
-  text-align: center;
   z-index: 1000;
+  padding: 5px 10px;
+}
+
+.header-content {
+  padding-left: 218px;
+  display: flex;
+  justify-content: space-between; /* Space between title and contact info */
+  align-items: center; /* Center vertically */
+  width: 100%;
 }
 
 .header-title {
@@ -11,7 +19,14 @@
   text-transform: uppercase;
   margin: 0;
   font-family: 'Poppins', sans-serif !important;
+  text-align: center; /* Center the title */
+  flex: 1; /* Allow the title to take available space */
+}
 
+.contact-info {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: flex-end; /* Align to the right */
 }
 
 .footer-text {
@@ -23,6 +38,7 @@
   display: flex;
   align-items: center;
 }
+
 .ant-layout-header {
   padding: 0px;
   background: none;
@@ -31,6 +47,9 @@
 }
 
 @media (max-width: 600px) {
+  .header-content {
+    padding-left: 40px;
+  }
   #footerText {
     display: none;
   }
