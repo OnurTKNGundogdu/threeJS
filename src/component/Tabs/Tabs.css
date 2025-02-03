@@ -1,30 +1,29 @@
 .tabs-menu .ant-tabs-tab {
-  color: black !important;
+  color: #1D3557 !important; /* Dark blue for tab text */
   font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .tabs-menu {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 18px;
-  border-bottom: 2px solid #a52a2a; /* Bordo veya koyu bir ton */
+  border-bottom: 2px solid #E76F51; /* Coral red for underline */
   margin-bottom: 10px;
   padding: 0px 10px;
   z-index: 999;
-  background-color: #cad2c5;
+  background-color: #F4F1DE; /* Light cream background */
   width: 100%;
 }
 
-.ant-tabs-nav-operations {
-  display: none !important;
+.ant-tabs-tab:hover {
+  background-color: #2A9D8F; /* Teal green on hover */
+  border-radius: 5px;
+  color: #F4F1DE !important; /* Light cream text on hover */
 }
 
 .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-  color: #e07a5f;
-}
-
-.ant-tabs-tab:hover {
-  color: #f4a261 !important;
+  color: #E76F51; /* Coral red for active tab */
 }
 
 .ant-tabs-nav::before,

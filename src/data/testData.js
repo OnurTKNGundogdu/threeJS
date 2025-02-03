@@ -1,4 +1,4 @@
-const x = `./models/dino/scene.gltf`;
+const x = `./models/cheese/scene.glb`;
 
 const testData = [
   {
@@ -74,7 +74,7 @@ const testData = [
     // modalImage: `/images/${7}.png`,
     modalImage: x,
   },
-  
+
   {
     dishType: 'meal deal',
     name: 'GYRO MEAL DEAL #1',

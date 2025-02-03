@@ -1,42 +1,47 @@
 .header {
   width: 100%;
-  background-color: #cad2c5;
+  background-color: #2A9D8F; /* Teal green for header background */
   z-index: 1000;
-  padding: 5px 10px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
 }
 
 .header-content {
-  padding-left: 218px;
   display: flex;
-  justify-content: space-between; /* Space between title and contact info */
-  align-items: center; /* Center vertically */
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
 .header-title {
-  color: black;
-  font-size: 20px;
+  color: #F4F1DE; /* Light cream for header title */
+  font-size: 24px;
   text-transform: uppercase;
   margin: 0;
   font-family: 'Poppins', sans-serif !important;
-  text-align: center; /* Center the title */
-  flex: 1; /* Allow the title to take available space */
+  text-align: center;
+  flex: 1;
 }
 
 .contact-info {
   display: flex;
-  align-items: center; /* Align items vertically */
-  justify-content: flex-end; /* Align to the right */
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .footer-text {
-  color: #9a3d3d;
+  color: #F4F1DE; /* Light cream for contact text */
   margin-right: 10px;
 }
 
 .wp-icon {
   display: flex;
   align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.wp-icon:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 .ant-layout-header {
@@ -48,9 +53,11 @@
 
 @media (max-width: 600px) {
   .header-content {
-    padding-left: 40px;
+    flex-direction: column;
+    align-items: center;
   }
-  #footerText {
+
+  .footer-text {
     display: none;
   }
 }

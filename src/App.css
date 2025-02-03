@@ -1,7 +1,7 @@
 body {
   margin: 0;
-   font-family: 'Poppins', sans-serif !important;
-  background-color: #CAD2C5; 
+  font-family: 'Poppins', sans-serif !important;
+  background-color: #F4F1DE; /* Light cream background */
 }
 
 h1,
@@ -10,8 +10,9 @@ h2 {
 }
 
 .ant-modal-content {
-  background-color: black;
-  color: white;
+  background-color: #264653; /* Dark teal for modal background */
+  color: #F4F1DE; /* Light cream text for contrast */
+  border-radius: 10px;
 }
 
 @media (max-width: 768px) {

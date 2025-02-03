@@ -1,26 +1,33 @@
 .food-card {
   width: 500px;
   min-height: 350px;
-  background-color: #4a4a4a;
-  color: #f4ede4;
+  background-color: #fff; /* white background */
+  color: #333; /* dark gray text color */
   position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle box shadow */
+  border-radius: 10px; /* rounded corners */
 }
 
 .food-card-title {
-  color: #f4ede4;
+  color: #333; /* dark gray text color */
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px; /* increased font size */
   text-align: center;
+  font-family: 'Playfair Display', serif; /* elegant font family */
 }
 
 .food-card-image {
   height: 250px;
   object-fit: cover;
   cursor: pointer;
+  border-top-left-radius: 10px; /* rounded top-left corner */
+  border-top-right-radius: 10px; /* rounded top-right corner */
 }
 
 .food-card-description {
-  color: #f4ede4;
+  color: #666; /* medium gray text color */
+  font-size: 18px; /* increased font size */
+  padding: 20px;
 }
 
 .food-card-footer {
@@ -28,24 +35,27 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  padding: 20px;
+  border-bottom-left-radius: 10px; /* rounded bottom-left corner */
+  border-bottom-right-radius: 10px; /* rounded bottom-right corner */
 }
 
 .food-card-price {
-  color: #f4ede4;
+  color: #333; /* dark gray text color */
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px; /* increased font size */
 }
 
 .food-card-icon {
-  font-size: 20px;
-  color: #f2cc8f;
+  font-size: 25px; /* increased font size */
+  color: #e07a5f; /* warm orange color */
   cursor: pointer;
 }
 
 .ant-card {
-  border-color: #d9c7b6;
+  border-color: #ddd; /* light gray border color */
 }
 
-.ant-card .ant-card-body{
+.ant-card .ant-card-body {
   padding: 0px 12px 12px 12px;
 }
