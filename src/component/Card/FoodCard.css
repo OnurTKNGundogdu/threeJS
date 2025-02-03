@@ -1,15 +1,12 @@
 .food-card {
   width: 500px;
   min-height: 350px;
-  background-color: #fff; /* white background */
-  color: #333; /* dark gray text color */
   position: relative;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle box shadow */
   border-radius: 10px; /* rounded corners */
 }
 
 .food-card-title {
-  color: #333; /* dark gray text color */
   font-weight: bold;
   font-size: 22px; /* increased font size */
   text-align: center;
@@ -25,7 +22,6 @@
 }
 
 .food-card-description {
-  color: #666; /* medium gray text color */
   font-size: 18px; /* increased font size */
   padding: 20px;
 }
@@ -41,14 +37,12 @@
 }
 
 .food-card-price {
-  color: #333; /* dark gray text color */
   font-weight: bold;
   font-size: 20px; /* increased font size */
 }
 
 .food-card-icon {
   font-size: 25px; /* increased font size */
-  color: #e07a5f; /* warm orange color */
   cursor: pointer;
 }
 

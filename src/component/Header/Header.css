@@ -1,6 +1,5 @@
 .header {
   width: 100%;
-  background-color: #333; /* dark gray background */
   z-index: 1000;
   padding: 5px 10px;
 }
@@ -14,7 +13,6 @@
 }
 
 .header-title {
-  color: #fff; /* white text color */
   font-size: 25px; /* increased font size */
   text-transform: uppercase;
   margin: 0;
@@ -27,11 +25,6 @@
   display: flex;
   align-items: center; /* align items vertically */
   justify-content: flex-end; /* align to the right */
-}
-
-.footer-text {
-  color: #ccc; /* light gray text color */
-  margin-right: 10px;
 }
 
 .wp-icon {
@@ -47,6 +40,9 @@
 }
 
 @media (max-width: 600px) {
+  .food-card {
+    width: 350px;
+  }
   .header-content {
     padding-left: 40px;
   }

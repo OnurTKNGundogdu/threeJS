@@ -11,11 +11,9 @@
 }
 
 .ant-layout-content {
-  height: calc(100vh - 133px);
+  height: calc(100vh - 140px);
   width: 100%;
   overflow: auto;
-  padding: 20px;
-  background-color: #f5f5f5; /* light gray background */
 }
 
 .section {
@@ -23,8 +21,6 @@
 }
 
 .section-title {
-  background-color: #333; /* dark gray background */
-  color: #fff; /* white text color */
   font-size: 28px; /* increased font size */
   font-weight: bold;
   font-family: 'Playfair Display', serif; /* elegant font family */

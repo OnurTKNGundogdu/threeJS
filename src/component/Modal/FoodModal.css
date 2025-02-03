@@ -1,6 +1,7 @@
 .food-modal .ant-modal-content {
-  background-color: #2f2f2f; /* dark gray background */
-  color: #fff; /* white text color */
+  padding: 20px;
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle box shadow */
 }
 
 .modal-image {
