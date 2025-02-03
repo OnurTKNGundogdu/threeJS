@@ -46,7 +46,7 @@ const MainContent = () => {
           ))}
         </>
       </Content>
-      <FoodModal isVisible={isModalVisible} image={modalImage} onClose={handleModalClose} />
+      {isModalVisible && <FoodModal isVisible={isModalVisible} image={modalImage} onClose={handleModalClose} />}
     </Layout>
   );
 };
