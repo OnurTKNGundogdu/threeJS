@@ -14,7 +14,6 @@
 
 .header-title {
   font-size: 25px; /* increased font size */
-  text-transform: uppercase;
   margin: 0;
   text-align: center; /* center the title */
   flex: 1; /* allow the title to take available space */
@@ -36,6 +35,10 @@
   background: none;
   width: 100% !important;
   height: auto;
+}
+.footer-text {
+  margin-right: 20px;
+  color: white;
 }
 
 @media (max-width: 600px) {

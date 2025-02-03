@@ -40,12 +40,12 @@
   color: #333333; /* dark gray text color */
 }
 
-.ant-tabs-tab:hover {
+.ant-tabs-tab-btn:hover {
   color: #ff9800; /* vibrant orange hover color */
 }
 
-.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-  color: #ffc107; /* warm orange active color */
+ .ant-tabs-tab-active .ant-tabs-tab-btn{
+  color: #358ab2 !important; /* warm orange active color */
 }
 
 .ant-modal-content {
