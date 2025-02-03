@@ -1,29 +1,32 @@
 .tabs-menu .ant-tabs-tab {
-  color: #1D3557 !important; /* Dark blue for tab text */
+  color: #333; /* dark gray text color */
   font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 18px; /* increased font size */
+  font-family: 'Montserrat', sans-serif; /* modern sans-serif font */
 }
 
 .tabs-menu {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 18px;
-  border-bottom: 2px solid #E76F51; /* Coral red for underline */
+  font-size: 18px; /* increased font size */
+  border-bottom: 2px solid #333; /* dark gray border color */
   margin-bottom: 10px;
   padding: 0px 10px;
   z-index: 999;
-  background-color: #F4F1DE; /* Light cream background */
+  background-color: #f5f5f5; /* light gray background */
   width: 100%;
 }
 
-.ant-tabs-tab:hover {
-  background-color: #2A9D8F; /* Teal green on hover */
-  border-radius: 5px;
-  color: #F4F1DE !important; /* Light cream text on hover */
+.ant-tabs-nav-operations {
+  display: none !important;
 }
 
 .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-  color: #E76F51; /* Coral red for active tab */
+  color: #e07a5f; /* warm orange color */
+}
+
+.ant-tabs-tab:hover {
+  color: #f4a261 !important; /* light orange color */
 }
 
 .ant-tabs-nav::before,
