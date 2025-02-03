@@ -1,70 +1,77 @@
 .header {
-    background-color: #455A64; /* deep blue background */
-    color: #FFFFFF; /* white text color */
-  }
-  
-  .header-content {
-    color: #BDBDBD; /* light gray text color */
-  }
-  
-  .header-title {
-    color: #FFFFFF; /* white text color */
-  }
-  
-  .food-card {
-    background-color: #FFFFFF; /* white background */
-    color: #333333; /* dark gray text color */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle box shadow */
-  }
-  
-  .food-card-title {
-    color: #333333; /* dark gray text color */
-  }
-  
-  .food-card-description {
-    color: #666666; /* medium gray text color */
-  }
-  
-  .food-card-price {
-    color: #1A237E /* warm orange price color */
-  }
-  
-  .food-card-icon {
-    color: #1A237E; /* warm orange icon color */
-  }
-  
-  .ant-tabs-tab {
-    color: #333333; /* dark gray text color */
-  }
-  
-  .ant-tabs-tab:hover {
-    color: #FF9800; /* vibrant orange hover color */
-  }
-  
-  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-    color: #FFC107; /* warm orange active color */
-  }
-  
-  .ant-modal-content {
-    background-color: #333333; /* dark gray background */
-    color: #FFFFFF; /* white text color */
-  }
-  
-  .modal-image {
-    border: 10px solid #FFFFFF; /* white border */
-  }
-  
-  .section-title {
-    background-color: #455A64; /* deep blue background */
-    color: #FFFFFF; /* white text color */
-    padding: 10px;
-    border-radius: 10px; /* rounded corners */
-  }
-  
-  .button {
-    background-color: #FFC107; /* warm orange background */
-    color: #FFFFFF; /* white text color */
-    padding: 10px 20px;
-    border-radius: 10px; /* rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle box shadow */
-  }
+  background-color: #455a64; /* deep blue background */
+  color: #ffffff; /* white text color */
+}
+
+.header-content {
+  color: #bdbdbd; /* light gray text color */
+}
+
+.header-title {
+  color: #ffffff; /* white text color */
+}
+
+.food-card {
+  background-color: #ffffff; /* white background */
+  color: #333333; /* dark gray text color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle box shadow */
+}
+.ant-card {
+  border-color: #ddd; /* light gray border color */
+}
+
+.food-card-title {
+  color: #333333; /* dark gray text color */
+}
+
+.food-card-description {
+  color: #666666; /* medium gray text color */
+}
+
+.food-card-price {
+  color: #1a237e; /* warm orange price color */
+}
+
+.food-card-icon {
+  color: #1a237e; /* warm orange icon color */
+}
+
+.ant-tabs-tab {
+  color: #333333; /* dark gray text color */
+}
+
+.ant-tabs-tab:hover {
+  color: #ff9800; /* vibrant orange hover color */
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #ffc107; /* warm orange active color */
+}
+
+.ant-modal-content {
+  background-color: #333333; /* dark gray background */
+  color: #ffffff; /* white text color */
+}
+
+.modal-image {
+  border: 10px solid #ffffff; /* white border */
+}
+
+.section-title {
+  background-color: #455a64; /* deep blue background */
+  color: #ffffff; /* white text color */
+  padding: 10px;
+  border-radius: 10px; /* rounded corners */
+}
+
+.button {
+  background-color: #ffc107; /* warm orange background */
+  color: #ffffff; /* white text color */
+  padding: 10px 20px;
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle box shadow */
+}
+
+.tabs-menu {
+  border-bottom: 2px solid #ddd; /* light gray border color */
+}
