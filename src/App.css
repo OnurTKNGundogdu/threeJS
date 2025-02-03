@@ -18,3 +18,9 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 600px) {
+  .food-card {
+    width: 350px;
+  }
+}
