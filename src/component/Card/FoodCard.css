@@ -24,6 +24,7 @@
 .food-card-description {
   font-size: 18px; /* increased font size */
   padding: 20px;
+  min-height: 100px;
 }
 
 .food-card-footer {
