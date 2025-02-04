@@ -1,4 +1,12 @@
-.food-modal .ant-modal-content {
+.food-modal {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle box shadow */
+}
+.ant-modal-content {
+  width: max-content;
+  text-align: center;
   padding: 20px;
   border-radius: 10px; /* rounded corners */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle box shadow */
@@ -7,4 +15,17 @@
 .modal-image {
   width: 100%;
   height: auto;
+}
+.ant-modal .ant-modal-close {
+  top: -5px !important;
+}
+
+.food-modal-image {
+  width: 330px; /* Set the desired width */
+  height: 280px; /* Set the desired height */
+  object-fit: cover; /* This will maintain the aspect ratio and cover the entire area */
+  cursor: pointer;
+}
+.custom-model-viewer {
+
 }

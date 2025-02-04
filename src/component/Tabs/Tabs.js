@@ -10,7 +10,7 @@ const TabsMenu = ({ tabTitles, contentRef }) => {
   const handleTabClick = (key) => {
     const section = document.getElementById(key);
     if (section && contentRef.current) {
-      const yOffset = -200;
+      const yOffset = -130;
       const yPosition = section.offsetTop + yOffset; // Use offsetTop relative to the content container
       contentRef.current.scrollTo({ top: yPosition, behavior: 'smooth' }); // Scroll within the content container
     }
