@@ -23,7 +23,6 @@
 .food-card-description {
   font-size: 18px; /* increased font size */
   padding: 20px;
-
 }
 
 .food-card-footer {
@@ -48,8 +47,9 @@
   font-size: 25px; /* increased font size */
   cursor: pointer;
 }
-
-
+.food-card-icon-text {
+  font-size: 15px; /* increased font size */
+}
 
 .ant-card .ant-card-body {
   padding: 0px 12px 12px 12px;

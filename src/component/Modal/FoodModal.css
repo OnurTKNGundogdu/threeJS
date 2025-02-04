@@ -1,15 +1,15 @@
 .food-modal {
+  width: auto !important;
   text-align: center;
   padding: 20px;
-  border-radius: 10px; /* rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle box shadow */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .ant-modal-content {
-  width: max-content;
   text-align: center;
   padding: 20px;
-  border-radius: 10px; /* rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle box shadow */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .modal-image {
@@ -17,15 +17,17 @@
   height: auto;
 }
 .ant-modal .ant-modal-close {
+  right: -1px;
   top: -5px !important;
 }
 
 .food-modal-image {
-  width: 330px; /* Set the desired width */
-  height: 280px; /* Set the desired height */
-  object-fit: cover; /* This will maintain the aspect ratio and cover the entire area */
+  width: -webkit-fill-available;
+  height: 280px;
+  object-fit: cover;
   cursor: pointer;
 }
-.custom-model-viewer {
 
+.model-viewer {
+  height: 250px;
 }

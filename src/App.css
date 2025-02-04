@@ -20,9 +20,6 @@ h2 {
 }
 
 @media (max-width: 600px) {
-  .ant-modal-close {
-    top: -5 !important;
-  }
   .food-card {
     width: 350px;
   }

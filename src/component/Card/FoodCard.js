@@ -1,8 +1,10 @@
 import React from 'react';
 import { Button, Card } from 'antd';
 import { EyeOutlined } from '@ant-design/icons';
-import './FoodCard.css';
 import Typography from 'antd/es/typography/Typography';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCube } from '@fortawesome/free-solid-svg-icons'; // Example icon for 3D
+import './FoodCard.css';
 
 const FoodCard = ({ item, on3DClick }) => {
   return (
@@ -25,12 +27,13 @@ const FoodCard = ({ item, on3DClick }) => {
         <Typography className='food-card-price'>{item.price}</Typography>
         {item?.modalImage ? (
           <Button
-            className='food-card-pric'
+            className='food-card-icon'
             onClick={() => {
               on3DClick(item);
             }}
           >
-            3D View
+            <FontAwesomeIcon icon={faCube} />
+            <Typography className='food-card-icon-text'>3D</Typography>
           </Button>
         ) : (
           <EyeOutlined
