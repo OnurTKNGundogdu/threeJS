@@ -22,7 +22,7 @@
 }
 
 .food-modal-image {
-  width: -webkit-fill-available;
+  width: 100%;
   height: 280px;
   object-fit: cover;
   cursor: pointer;

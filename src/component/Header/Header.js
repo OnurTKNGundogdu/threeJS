@@ -19,7 +19,7 @@ export const Header = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <WhatsAppOutlined style={{ fontSize: '40px', color: '#9A3D3D' }} />
+            <WhatsAppOutlined style={{ fontSize: '40px', color: '#00ff41' }} />
           </a>
         </div>
       </div>
