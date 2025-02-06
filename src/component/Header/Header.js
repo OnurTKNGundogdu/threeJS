@@ -19,7 +19,7 @@ export const Header = () => {
               target='_blank'
               rel='noopener noreferrer'
           >
-            <WhatsAppOutlined style={{fontSize: '40px', color: '#9A3D3D'}}/>
+            <WhatsAppOutlined style={{fontSize: '40px', color: '#25D366',marginRight:'10px'}}/>
           </a>
             <a
                 href='tel:+447760259130'
@@ -28,7 +28,7 @@ export const Header = () => {
                 target='_blank'
                 rel='noopener noreferrer'
             >
-              <PhoneOutlined style={{fontSize: '40px', color: '#9A3D3D'}}/>
+              <PhoneOutlined style={{fontSize: '40px', color: '#f4a100'}}/>
             </a>
         </div>
       </div>
