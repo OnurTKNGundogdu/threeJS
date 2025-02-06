@@ -13,7 +13,7 @@
 }
 
 .header-title {
-  font-size: 25px; /* increased font size */
+  font-size: 20px; /* increased font size */
   margin: 0;
   text-align: center; /* center the title */
   flex: 1; /* allow the title to take available space */
