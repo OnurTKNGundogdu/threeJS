@@ -15,8 +15,9 @@ const MainContent = () => {
   const [modalImage, setModalImage] = useState('');
   const contentRef = useRef(null); // Add a ref for the Content section
 
-  const handle3DIconClick = (modalImage) => {
-    setModalImage(modalImage);
+  const handle3DIconClick = (item) => {
+    const data = item?.modalImage ? item?.modalImage : item.image;
+    setModalImage(data);
     setIsModalVisible(true);
   };
 
@@ -39,14 +40,14 @@ const MainContent = () => {
                 {testData
                   .filter((data) => data.dishType === title.toLowerCase())
                   .map((item, i) => (
-                    <FoodCard key={i} item={item} on3DClick={() => handle3DIconClick(item.modalImage)} />
+                    <FoodCard key={i} item={item} on3DClick={() => handle3DIconClick(item)} />
                   ))}
               </div>
             </div>
           ))}
         </>
       </Content>
-      <FoodModal isVisible={isModalVisible} image={modalImage} onClose={handleModalClose} />
+      {isModalVisible && <FoodModal isVisible={isModalVisible} image={modalImage} onClose={handleModalClose} />}
     </Layout>
   );
 };

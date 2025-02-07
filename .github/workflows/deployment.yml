@@ -1,0 +1,31 @@
+name: Upload to S3
+run-name: ${{ github.actor }} is testing out GitHub Actions
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ secrets.NODE_VERSION }}
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run build
+      - name: Set up AWS Credetails
+        uses: aws-actions/configure-aws-credentails@v1
+        with:
+          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_region: ${{ secrets.AWS_REGION }}
+          
+      - name: Deploy to S3    
+        run: |
+          aws s3 sync build/ s3://${{ secrets.AWS_S3_BUCKET }} --acl public-read --delete

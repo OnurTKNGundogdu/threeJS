@@ -11,7 +11,7 @@
 }
 
 .ant-layout-content {
-  height: calc(-133px + 100vh);
+  height: calc(100vh - 140px);
   width: 100%;
   overflow: auto;
 }
@@ -21,23 +21,20 @@
 }
 
 .section-title {
-  color: #9a3d3d;
-  font-size: 24px;
+  font-size: 28px; /* increased font size */
   font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle box shadow */
 }
 
 .card-container {
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-}
-
-.ant-layout-content {
-  width: 100%;
-  overflow: auto;
 }
 
 @media (max-width: 768px) {
