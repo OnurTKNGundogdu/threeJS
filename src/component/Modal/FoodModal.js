@@ -3,7 +3,6 @@ import { Modal } from 'antd';
 import '@google/model-viewer';
 import './FoodModal.css';
 
-
 const FoodModal = ({ isVisible, image, onClose }) => {
   return (
     <Modal
@@ -15,7 +14,7 @@ const FoodModal = ({ isVisible, image, onClose }) => {
       className={image?.includes('.png') ? 'food-modal' : 'food-modal width-max-content'}
     >
       {image?.includes('.png') ? (
-        <img src={image} className='food-modal-image' />
+        <img src={image} alt={image} className='food-modal-image' />
       ) : (
         <model-viewer
           src={image}
