@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -20,13 +20,11 @@ jobs:
         run: |
           npm install
           npm run build
-      # - name: Set up AWS Credetails
-      #   uses: aws-actions/configure-aws-credentails@v1
-      #   with:
-      #     aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      #     aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      #     aws_region: ${{ secrets.AWS_REGION }}
-          
-      # - name: Deploy to S3    
-      #   run: |
-      #     aws s3 sync build/ s3://${{ secrets.AWS_S3_BUCKET }} --acl public-read --delete
+      - name: Configure AWS Credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ secrets.AWS_REGION }}  # Bölgeni güncelle
+      - name: Upload Files to S3
+        run: |
+          aws s3 sync ./upload-folder s3://${{ secrets.AWS_S3_BUCKET }} --delete
