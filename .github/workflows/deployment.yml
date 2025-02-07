@@ -27,7 +27,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v2
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
-          aws-region: ${{ secrets.AWS_REGION }}
+          aws-region: eu-west-2
       - name: Upload Files to S3
         run: |
           aws s3 sync ./build s3://${{ secrets.AWS_S3_BUCKET }} --delete
