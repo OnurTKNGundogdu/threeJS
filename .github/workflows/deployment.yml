@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -24,7 +27,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v2
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
-          aws-region: ${{ secrets.AWS_REGION }}  # Bölgeni güncelle
+          aws-region: ${{ secrets.AWS_REGION }}
       - name: Upload Files to S3
         run: |
-          aws s3 sync ./upload-folder s3://${{ secrets.AWS_S3_BUCKET }} --delete
+          aws s3 sync ./build s3://${{ secrets.AWS_S3_BUCKET }} --delete
