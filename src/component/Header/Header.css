@@ -40,6 +40,16 @@
   margin-right: 20px;
   color: white;
 }
+.wp {
+  font-size: 40px;
+  color: #25d366;
+  margin-right: 10px;
+}
+
+.phone {
+  font-size: 40px;
+  color: #f4a100;
+}
 
 @media (max-width: 600px) {
   .header-content {

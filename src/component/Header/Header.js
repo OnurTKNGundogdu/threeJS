@@ -13,25 +13,19 @@ export const Header = () => {
             Contact Us: 0776-025-9130
           </Typography>
           <a
-              href='https://wa.me/+447909225031'
-              className='wp-icon'
-              id='wpIcon'
-              target='_blank'
-              rel='noopener noreferrer'
+            href='https://wa.me/+447909225031'
+            className='wp-icon'
+            id='wpIconContainer'
+            target='_blank'
+            rel='noopener noreferrer'
           >
-            <WhatsAppOutlined style={{fontSize: '40px', color: '#25D366',marginRight:'10px'}}/>
+            <WhatsAppOutlined className='wp' />
           </a>
-            <a
-                href='tel:+447760259130'
-                className='wp-icon'
-                id='wpIcon'
-                target='_blank'
-                rel='noopener noreferrer'
-            >
-              <PhoneOutlined style={{fontSize: '40px', color: '#f4a100'}}/>
-            </a>
+          <a href='tel:+447760259130' className='wp-icon' id='wpIcon' target='_blank' rel='noopener noreferrer'>
+            <PhoneOutlined className='phone' style={{}} />
+          </a>
         </div>
       </div>
     </header>
-);
+  );
 };
