@@ -20,13 +20,13 @@ jobs:
         run: |
           npm install
           npm run build
-      - name: Set up AWS Credetails
-        uses: aws-actions/configure-aws-credentails@v1
-        with:
-          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws_region: ${{ secrets.AWS_REGION }}
+      # - name: Set up AWS Credetails
+      #   uses: aws-actions/configure-aws-credentails@v1
+      #   with:
+      #     aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #     aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #     aws_region: ${{ secrets.AWS_REGION }}
           
-      - name: Deploy to S3    
-        run: |
-          aws s3 sync build/ s3://${{ secrets.AWS_S3_BUCKET }} --acl public-read --delete
+      # - name: Deploy to S3    
+      #   run: |
+      #     aws s3 sync build/ s3://${{ secrets.AWS_S3_BUCKET }} --acl public-read --delete
