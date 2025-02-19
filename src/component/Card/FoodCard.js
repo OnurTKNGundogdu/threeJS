@@ -25,7 +25,7 @@ const FoodCard = ({ item, on3DClick }) => {
       <p className='food-card-description'>{item.description}</p>
       <div className='food-card-footer'>
         <Typography className='food-card-price'>{item.price}</Typography>
-        {item?.modalImage ? (
+        {item?.modalImage.includes('glb') ? (
           <Button
             className='food-card-icon'
             onClick={() => {
