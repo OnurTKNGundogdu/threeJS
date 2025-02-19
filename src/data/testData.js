@@ -20,7 +20,7 @@ const testData = [
   },
   {
     dishType: 'main',
-    name: "MIundefinedED (Chief's Special)",
+    name: "MIXED (Chief's Special)",
     description: 'Chicken Gyro with Lamb Sausage and Halloumi Cheese',
     price: '£15.00',
     image: `/images/${3}.png`,
@@ -78,7 +78,7 @@ const testData = [
   {
     dishType: 'meal deal',
     name: 'GYRO MEAL DEAL #2',
-    description: 'Miundefineded Gyro, Chips & Soft Drink, Baklava',
+    description: 'Mixed Gyro, Chips & Soft Drink, Baklava',
     price: '£19.50',
     image: `/images/${3}.png`,
     modalImage: undefined,
@@ -114,11 +114,11 @@ const testData = [
     description: 'Comes with Greek Flatbread, salad, chips, hummus and tzatziki or chilli sauces',
     price: '£10.00',
     image: `/images/${9}.png`,
-    modalImage: undefined,
+    modalImage: x,
   },
   {
     dishType: 'vegetarian',
-    name: 'GRILLED HALLOUMI BOundefined',
+    name: 'GRILLED HALLOUMI BOX',
     description: 'Comes with a side of lettuces and Hummus',
     price: '£6.00',
     image: `/images/${10}.png`,
@@ -134,7 +134,7 @@ const testData = [
   },
   {
     dishType: 'vegetarian',
-    name: 'FALAFEL BOundefined (Fried)',
+    name: 'FALAFEL BOX (Fried)',
     description: 'Comes with salad, chips, Hummus and tzatziki sauces',
     price: '£7.00',
     image: `/images/${12}.png`,
@@ -142,7 +142,7 @@ const testData = [
   },
   {
     dishType: 'vegetarian',
-    name: 'MIundefinedED VEGIE HALLOUMI (3pcs) & FALAFEL (3pcs)',
+    name: 'MIXED VEGIE HALLOUMI (3pcs) & FALAFEL (3pcs)',
     description: 'Served with Greek Pita bread, grilled vegatables, salad, chips,tzatziki sauce and Hummus',
     price: '£13.00',
     image: `/images/${13}.png`,
@@ -218,7 +218,7 @@ const testData = [
   {
     dishType: 'sauces',
     name: 'SAUCES',
-    description: 'A pot of eundefinedtra tzatziki ',
+    description: 'A pot of extra tzatziki ',
     price: '£1.00',
     image: `/images/${22}.png`,
     modalImage:undefined
@@ -226,7 +226,7 @@ const testData = [
   {
     dishType: 'sauces',
     name: 'SAUCES',
-    description: 'A pot of eundefinedtra chili sauces',
+    description: 'A pot of extra chili sauces',
     price: '£1.00',
     image: `/images/${23}.png`,
     modalImage: undefined
