@@ -114,7 +114,7 @@ const testData = [
     description: 'Comes with Greek Flatbread, salad, chips, hummus and tzatziki or chilli sauces',
     price: '£10.00',
     image: `/images/${9}.png`,
-    modalImage: x,
+    modalImage: undefined,
   },
   {
     dishType: 'vegetarian',
